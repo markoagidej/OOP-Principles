@@ -7,7 +7,7 @@ class Product:
         self.name = name
         self.price = price
 
-    def show_details(self):
+    def display_info(self):
         print(f"Product ID: {self.product_id}")
         print(f"Name: {self.name}")
         print(f"Price: {self.price}\n")
@@ -19,7 +19,7 @@ class Book(Product):
         super().__init__(product_id, name, price)
         self.author = author
 
-    def show_details(self):
+    def display_info(self):
         print(f"Product ID: {self.product_id}")
         print(f"Name: {self.name}")
         print(f"Price: {self.price}")
@@ -30,7 +30,7 @@ class Electronic(Product):
         super().__init__(product_id, name, price)
         self.specs = specs
 
-    def show_details(self):
+    def display_info(self):
         print(f"Product ID: {self.product_id}")
         print(f"Name: {self.name}")
         print(f"Price: {self.price}")
@@ -41,7 +41,7 @@ class Clothing(Product):
         super().__init__(product_id, name, price)
         self.size = size        
 
-    def show_details(self):
+    def display_info(self):
         print(f"Product ID: {self.product_id}")
         print(f"Name: {self.name}")
         print(f"Price: {self.price}")
@@ -56,6 +56,6 @@ book = Book("feauhngfe", "Dune", 5.99, "Frank Herbert")
 electronic = Electronic("jiefgwapoij", "Camera", 350.00, "Zoom")
 clothing = Clothing("oiipjafwe", "T-shirt", 15.95, "Medium")
 
-book.show_details()
-electronic.show_details()
-book.show_details()
+book.display_info()
+electronic.display_info()
+clothing.display_info()
